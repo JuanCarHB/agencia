@@ -1,44 +1,27 @@
-Agencia de Viajes - Página Web
+# Agencia de Viajes - Página Web Interactiva
 
-Este proyecto es una página web de una agencia de viajes que permite mostrar destinos turísticos y paquetes de viaje. Además, incluye una sección de actividades del hotel que pueden ser visualizadas en una cuadrícula, con efectos de hover para una mejor interacción del usuario.
+Este proyecto es una página web interactiva para una **Agencia de Viajes**, que muestra información sobre destinos turísticos, paquetes de viaje y actividades de hotel. Los usuarios pueden explorar destinos y paquetes mediante navegación interactiva, además de descubrir actividades del hotel con efectos de hover.
 
-Estructura del Proyecto
-La página web está compuesta por tres archivos principales:
+## Características
 
-index.html: Contiene la estructura básica de la página, incluyendo el encabezado, las secciones de destinos, paquetes, actividades y el pie de página.
+### **Página Principal**
+- **Encabezado**: Presenta el logo de la agencia y enlaces a las secciones de la página.
+- **Sección de Destinos**: Muestra información sobre varios destinos turísticos, con la posibilidad de navegar entre ellos usando flechas.
+- **Sección de Paquetes**: Los usuarios pueden navegar por diferentes paquetes turísticos y ver detalles como precio y recomendaciones.
+- **Actividades del Hotel**: Se muestran diversas actividades disponibles en el hotel, con un efecto interactivo al pasar el mouse.
+- **Pie de Página**: Incluye información de derechos de autor y enlaces a redes sociales.
 
-styles.css: Archivo de estilo que define la apariencia visual de la página, incluyendo la disposición de las secciones, los efectos de hover y el diseño responsivo.
+### **Interactividad**
+- **Cambio de Destinos**: Los usuarios pueden alternar entre diferentes destinos turísticos utilizando flechas.
+- **Cambio de Paquetes**: La misma funcionalidad para paquetes turísticos, donde el usuario puede elegir entre diferentes opciones.
+- **Hover sobre Actividades**: Las actividades del hotel cambian de color cuando se pasa el mouse sobre ellas.
 
-script.js: Contiene la lógica de JavaScript que permite la interactividad en la página, como la navegación entre destinos y paquetes, y los efectos de hover para las actividades.
+### **Diseño Visual**
+- **Responsive**: El sitio web se adapta a dispositivos móviles y tabletas, con un diseño limpio y organizado.
+- **Efectos de Hover**: Los botones de flecha y las actividades tienen efectos interactivos que mejoran la experiencia del usuario.
 
-Descripción
-Página Principal (index.html)
-La página contiene las siguientes secciones:
-
-Encabezado (Header):
-Logo de la agencia de viajes.
-Barra de navegación con enlaces a "Inicio", "Destinos", "Paquetes" y "Contacto".
-Sección de Contenido:
-Lateral izquierdo (Destinos): Muestra información sobre un destino turístico, incluyendo una imagen, el nombre del destino y una breve descripción. Los usuarios pueden navegar entre los destinos utilizando botones de flecha.
-Lateral derecho (Paquetes): Muestra un paquete de viaje con su imagen, tipo, precio y recomendaciones. Los usuarios también pueden navegar entre los paquetes utilizando flechas.
-Sección de Actividades del Hotel:
-Presenta una lista de actividades disponibles en el hotel, como Spa, Gimnasio, y otras. Cada actividad se muestra con una imagen y descripción. Además, se añaden efectos de hover que cambian el color de fondo al pasar el cursor sobre ellas.
-Pie de Página (Footer):
-Incluye un mensaje de derechos reservados y enlaces a las redes sociales (Facebook, Instagram, Twitter).
-Interactividad (script.js)
-El archivo JavaScript contiene la siguiente lógica:
-
-Cambio de Destinos:
-Se mantiene un índice currentDestIndex que determina el destino actual visible. Al hacer clic en las flechas izquierda o derecha, el índice cambia y se actualiza la información del destino en la página.
-Cambio de Paquetes:
-Similar al cambio de destinos, se mantiene un índice currentPackageIndex que permite al usuario navegar entre los paquetes de viaje.
-Efectos de Hover en Actividades:
-Las actividades muestran un efecto de cambio de color de fondo cuando el usuario pasa el mouse sobre ellas, gracias a las funciones changeColor y resetColor.
-Estilos Visuales (styles.css)
-El archivo CSS define el diseño y la estética de la página, incluyendo:
-
-Uso de Flexbox para organizar las secciones de contenido.
-Una cuadrícula para las actividades del hotel.
-Estilos para botones, imágenes y texto.
-Efectos de transición al pasar el mouse sobre las actividades del hotel.
-Estilos responsivos utilizando media queries para ajustar la disposición de la página en dispositivos móviles.
+/agencia-de-viajes
+├── index.html          # Contenido HTML de la página
+├── styles.css          # Estilos CSS para la página
+├── script.js           # Lógica de interactividad de la página
+├── README.md           # Este archivo
