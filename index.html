@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Agencia de Viajes</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Destinos</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    
+    <section class="content">
+        <!-- Lateral izquierdo: Destinos -->
+        <div class="left-panel">
+            <div class="destination">
+                <div class="destination-image" id="dest-image"></div>
+                <h3 id="dest-name">Mazatlán</h3>
+                <p id="dest-description">Mazatlán es famoso por sus playas y su ambiente relajado.</p>
+                <div class="arrows">
+                    <button class="arrow-left" onclick="changeDestination('left')">&#8592;</button>
+                    <button class="arrow-right" onclick="changeDestination('right')">&#8594;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lateral derecho: Paquetes -->
+        <div class="right-panel">
+            <div class="package">
+                <div class="package-image" id="package-image"></div>
+                <h3 id="package-type">Solo Tour</h3>
+                <p id="package-price">Precio: $200</p>
+                <p id="package-recommendations">Recomendado para aventureros.</p>
+                <div class="arrows">
+                    <button class="arrow-left" onclick="changePackage('left')">&#8592;</button>
+                    <button class="arrow-right" onclick="changePackage('right')">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades del hotel -->
+    <section class="activities">
+        <h2>Actividades del Hotel</h2>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdx3vS641JPEJ-DMPYnrWbFoeZe2kmQawYA&s" alt="Spa">
+            <p>Spa - Relájate con nuestros tratamientos exclusivos.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://pacificostudio.mx/wp-content/uploads/2024/01/Copia-de-descarga-thegem-blog-default.png" alt="Gym">
+            <p>Gimnasio - Mantente en forma durante tus vacaciones.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://cdn-blog.superprof.com/blog_mx/wp-content/uploads/2024/07/ttaler-pintura-cdmx.jpg" alt="Pintura">
+            <p>Pintura - Disfruta de una clase de pintura creativa.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVPy7Po_3GIRFEjbhh9SH4KozRB-oPkKkqcw&s" alt="Temazcal">
+            <p>Temazcal - Un ritual ancestral de purificación.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCBAYIIpmY1fYqcjMnkt4KTtPjS6FHcgktg&s" alt="Taller de Artesanías">
+            <p>Taller de Artesanías - Crea recuerdos únicos durante tus vacaciones.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://www.mexicodestinos.com/blog/wp-content/uploads/2013/07/02.jpg" alt="Zona de Parejas">
+            <p>Zona de Parejas - Disfruta de un espacio exclusivo para dos.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://cdn.bestlocationhotels.com/wp-content/uploads/2016/02/Hard-Rock-Hotel-Riviera-Maya-1-1.jpg" alt="Zona Infantil">
+            <p>Zona Infantil - Diversión segura para los más pequeños.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/70/04/00/caption.jpg?w=900&h=-1&s=1" alt="Buffet">
+            <p>Buffet - Sabores variados para todos los gustos.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://s.ineventos.com/blog/2021/100074/124313-1080w.webp" alt="Eventos Empresariales">
+            <p>Eventos Empresariales - Salas equipadas para reuniones de negocios.</p>
+        </div>
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://ucarecdn.com/13242dd3-3617-4735-b533-5cee04c5d2aa/-/resize/720x/%20" alt="Servicio de Lavandería">
+            <p>Lavandería - Servicio rápido y de calidad para tu comodidad.</p>
+        </div>
+        <!-- Nuevas actividades -->
+        <div class="activity" onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/cf/bd/f2/casino-pit-area.jpg?w=700&h=-1&s=1" alt="Casino">
+            <p>Casino - Vive la emoción de los juegos de azar.</p>
+        </div>
+  
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
