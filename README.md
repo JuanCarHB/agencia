@@ -20,8 +20,4 @@ Este proyecto es una página web interactiva para una **Agencia de Viajes**, que
 - **Responsive**: El sitio web se adapta a dispositivos móviles y tabletas, con un diseño limpio y organizado.
 - **Efectos de Hover**: Los botones de flecha y las actividades tienen efectos interactivos que mejoran la experiencia del usuario.
 
-/agencia-de-viajes
-├── index.html          # Contenido HTML de la página
-├── styles.css          # Estilos CSS para la página
-├── script.js           # Lógica de interactividad de la página
-├── README.md           # Este archivo
+
