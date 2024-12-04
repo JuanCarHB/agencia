@@ -1,12 +1,16 @@
 Agencia de Viajes - Página Web
+
 Este proyecto es una página web de una agencia de viajes que permite mostrar destinos turísticos y paquetes de viaje. Además, incluye una sección de actividades del hotel que pueden ser visualizadas en una cuadrícula, con efectos de hover para una mejor interacción del usuario.
 
 Estructura del Proyecto
 La página web está compuesta por tres archivos principales:
 
 index.html: Contiene la estructura básica de la página, incluyendo el encabezado, las secciones de destinos, paquetes, actividades y el pie de página.
+
 styles.css: Archivo de estilo que define la apariencia visual de la página, incluyendo la disposición de las secciones, los efectos de hover y el diseño responsivo.
+
 script.js: Contiene la lógica de JavaScript que permite la interactividad en la página, como la navegación entre destinos y paquetes, y los efectos de hover para las actividades.
+
 Descripción
 Página Principal (index.html)
 La página contiene las siguientes secciones:
